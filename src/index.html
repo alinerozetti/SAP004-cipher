@@ -3,20 +3,26 @@
   <head>
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap" rel="stylesheet">
   </head>
-  <body>
-    
+  <body class="fundo">
+   
+    <h1>Security</h1>
     <div id="root">
-      <h1>Ola, seja bem vindo(a)!</h1>
-      <p>Digite a senha </p>
+      <h2>Ola, seja bem vindo(a)!</h2>
+      <p>Digite sua palavra: </p>
       <input type="text" placeholder="Digite sua senha" name="" id="senha">
-      <p> Digite o offset:</p>
-      <input type="text" placeholder=" digite o número" id="offset">
-      <button id="botaoCod" onclick="">Codificar</button>
-      <button onclick="">Decodificar</button>
-      <p>Resultado é</p>
+      <p> Digite uma chave:</p>
+      <input type="text" placeholder="Digite o número" id="offset">
+      <div class="espacoBotoes">
+      <button class="btn btn-light" id="botaoCod" >Codificar</button>
+      <button class="btn btn-light" id="botaoDec" >Decodificar</button>
+    </div>
+      <p>Sua senha é:</p>
       <p id= "resposta"></p>
+      <button class="btn btn-light" id= "Reset">Reset</button>
     </div>
     <script src="index.js" type="module"></script>
   

@@ -36,9 +36,10 @@ const cipher =  {
     for (let contador  = 0; contador < palavra.length; contador++) 
     {
      let tabelaAsc= palavra.charCodeAt(contador);
-     tabelaAsc= tabelaAsc - offset;
-     if(tabelaAsc<65){
-     tabelaAsc= tabelaAsc+26;
+     tabelaAsc= tabelaAsc -
+      offset;
+     if(tabelaAsc< 65){
+     tabelaAsc= tabelaAsc + 26;
      }
      palavraDecodificada= palavraDecodificada+ String.fromCharCode(tabelaAsc);
     }
