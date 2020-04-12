@@ -5,7 +5,7 @@ botaoCod.addEventListener("click",function (){
 
     let senha= document.getElementById("senha");
     let offset=  document.getElementById("offset");
-    let resultado= cipher.encode(senha.value, offset.value);
+    let resultado= cipher.encode(offset.value, senha.value);
     let resposta= document.getElementById("resposta");
     resposta.innerHTML= resultado;
 
@@ -16,7 +16,7 @@ botaoDec.addEventListener("click",function (){
 
     let senha= document.getElementById("senha");
     let offset=  document.getElementById("offset");
-    let resultado= cipher.decode(senha.value, offset.value);
+    let resultado= cipher.decode (offset.value, senha.value);
     let resposta= document.getElementById("resposta");
     resposta.innerHTML= resultado;
 

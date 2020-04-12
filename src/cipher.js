@@ -1,5 +1,5 @@
 const cipher =  {
-  encode: function (palavra, offset)   {
+  encode: function (offset,palavra )   {
     
     palavra = palavra.toUpperCase();
     offset = offset % 26;
@@ -27,7 +27,7 @@ const cipher =  {
     
     
   },
-  decode: function(palavra, offset){
+  decode: function( offset, palavra){
 
     palavra = palavra.toUpperCase();
     offset = offset % 26;
