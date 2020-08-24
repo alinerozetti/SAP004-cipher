@@ -1,6 +1,6 @@
 import cipher from './cipher.js';
 
-let botaoCod= document.getElementById("botaoCod")
+let botaoCod= document.getElementById("buttonCod")
 botaoCod.addEventListener("click",function (){
 
     let senha= document.getElementById("senha");
@@ -11,7 +11,7 @@ botaoCod.addEventListener("click",function (){
 
 });
 
-let botaoDec= document.getElementById("botaoDec")
+let botaoDec= document.getElementById("buttonDec")
 botaoDec.addEventListener("click",function (){
 
     let senha= document.getElementById("senha");
